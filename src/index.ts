@@ -8,7 +8,7 @@ const app = express();
 app.use(cors())
 app.use(express.json());
 
-app.use("/bicicletas", bicicletaRouter);
+app.use("/bikes", bicicletaRouter);
 
 const server = app.listen(process.env.PORT || 3003, () => {
   if (server) {
